@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>enter a number <input id="id_num" type="number"> </p>
+    <p>click here : <button type="button" onclick="buttonClick() ">the number of digits</button> </p>
+
+    <script>
+        //Ex 11
+        function buttonClick() {
+            x = parseInt(document.getElementById('id_num').value);
+            y = 1;
+            while (x > 9) {
+                x = x / 10;
+                y++
+            }
+            document.write(`The number of digit is , ${Math.floor(y)}`)
+
+        }
+
+    </script>
+</body>
+
+</html>
